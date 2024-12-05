@@ -1,0 +1,10 @@
+{% for candidato in candidatos %}
+    <p>{{ candidato.nome_candidato}}
+        {{ candidato.email }}
+        {{candidato.telefone}}
+        <a href="/dowload/{{ candidato.id_candidato}}">Baixar Currículos</a>
+    </p>
+
+{% else %}
+    <p>Não há candidatos para essa vaga!</p>
+{% endfor %}
